@@ -1,0 +1,28 @@
+{
+  "name": "vite-vue3",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.0",
+    "change-case": "^4.1.2",
+    "debug": "^4.3.1",
+    "element-plus": "^1.0.2-beta.46",
+    "es-module-lexer": "^0.4.1",
+    "mini-svg-data-uri": "^1.2.3",
+    "node": "^15.14.0",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@types/node": "^14.14.41",
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.1.3",
+    "vite": "^2.1.5",
+    "vue-tsc": "^0.0.15"
+  }
+}

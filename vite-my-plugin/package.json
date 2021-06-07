@@ -1,0 +1,19 @@
+{
+  "name": "vite-my-plugin",
+  "version": "1.0.0",
+  "description": "rollup插件请求",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/pluginutils": "^4.1.0",
+    "magic-string": "^0.25.7",
+    "rollup": "^2.45.2",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}
