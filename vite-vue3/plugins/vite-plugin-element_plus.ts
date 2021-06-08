@@ -100,6 +100,8 @@ export default (options: VitePluginComponentImport): Plugin => {
         if (isResolveComponent && compNameList.some((item) => importVariables.includes(item))) {
           str().remove(ss, endIndex);
         }
+
+        writeLog('最终的返回结果',str().toString())
       }
       return {
         map: needSourcemap ? str().generateMap({ hires: true }) : null,

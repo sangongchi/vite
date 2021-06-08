@@ -1,24 +1,36 @@
 <template>
   <h1>{{ msg }}</h1>
+  <el-button @click="getData">mockGet请求</el-button>
   <el-button type="primary"> 测试--</el-button>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { ref, defineComponent } from 'vue';
+import { getMockData } from '@/api/index.ts';
 
 export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   setup: () => {
-    const count = ref(0)
-    return { count }
-  }
-})
+    const count = ref(0);
+    return { count };
+  },
+  methods: {
+    async getData() {
+      try {
+        let data = await getMockData();
+        console.log('出发get请求', data);
+      } catch (e) {
+        console.log(e);
+      }
+    },
+  },
+});
 </script>
 
 <style scoped>
